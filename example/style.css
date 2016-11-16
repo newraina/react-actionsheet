@@ -1,0 +1,17 @@
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  background: #eee;
+  border: none;
+  outline: none;
+  margin-top: 100px;
+}

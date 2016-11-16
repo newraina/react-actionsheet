@@ -1,0 +1,110 @@
+
+.react-actionsheet-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  backface-visibility: hidden;
+  background: rgba(0, 0, 0, 0.4);
+
+  transition: opacity 0.3s;
+  opacity: 0;
+  display: none;
+}
+
+.react-actionsheet-show .react-actionsheet-mask {
+  opacity: 1;
+  display: block;
+}
+
+.react-actionsheet-wrap {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  width: calc(100% - 20px);
+  transition: all 0.3s;
+  z-index: 1001;
+  transform: translate3d(0, 101%, 0);
+}
+
+.react-actionsheet-show .react-actionsheet-wrap {
+  transform: translate3d(0, 0, 0);
+}
+
+.react-actionsheet-menu {
+  border-radius: 12px;
+  background: rgba(246, 246, 246, 0.9);
+}
+
+.react-actionsheet-menu-item {
+  position: relative;
+  height: 57px;
+  width: 100%;
+  line-height: 57px;
+  text-align: center;
+}
+
+.react-actionsheet-menu-item:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.react-actionsheet-menu-item:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.react-actionsheet-menu-item:active {
+  background: rgba(248, 248, 248, 0.9);
+}
+
+.react-actionsheet-menu-item::after {
+  position: absolute;
+  display: block;
+  bottom: -100%;
+  right: -100%;
+  left: 0;
+  top: 0;
+  content: '';
+  box-sizing: border-box;
+  pointer-events: none;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+}
+
+.react-actionsheet-menu-item + .react-actionsheet-menu-item::after {
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.react-actionsheet-action {
+  margin-top: 8px;
+  border-radius: 12px;
+  background: rgb(246, 246, 246);
+}
+
+.react-actionsheet-action-item {
+  height: 57px;
+  line-height: 57px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff7878;
+  border-radius: 12px;
+}
+
+.react-actionsheet-action-item:active {
+  background: rgb(254, 254, 254);
+}
+
+.react-actionsheet-action-item:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.react-actionsheet-action-item:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}

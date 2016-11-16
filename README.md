@@ -4,7 +4,7 @@
 # Installation
 
 ```
-npm i react-native-actionsheet --save
+npm i react-actionsheet --save
 ```
 
 # Demo
