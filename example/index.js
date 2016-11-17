@@ -4,7 +4,7 @@ import './style.css'
 import { Component } from 'react'
 import { render } from 'react-dom'
 
-import Actionsheet from '../dist'
+import Actionsheet from '../src'
 
 class App extends Component {
 
