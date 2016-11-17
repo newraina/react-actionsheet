@@ -8,8 +8,8 @@ module.exports = {
   entry: './src/index.js',
 
   output: {
-    path: path.resolve('dist'),
-    publicPath: '/dist/',
+    path: path.resolve('lib'),
+    publicPath: '/lib/',
     filename: 'index.js',
     libraryTarget: 'commonjs2'
   },
