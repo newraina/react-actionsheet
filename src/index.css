@@ -1,4 +1,8 @@
 
+.react-actionsheet * {
+ box-sizing: border-box;
+}
+
 .react-actionsheet-mask {
   position: fixed;
   top: 0;
@@ -24,7 +28,7 @@
   left: 0;
   bottom: 0;
   padding: 10px;
-  width: calc(100% - 20px);
+  width: 100%;
   transition: all 0.3s;
   z-index: 1001;
   transform: translate3d(0, 101%, 0);
