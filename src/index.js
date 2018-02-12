@@ -10,6 +10,7 @@ class Actionsheet extends Component {
   static defaultProps = {
     onRequestClose: noop,
     onCancel: noop,
+    cancelText: '取消',
     show: false,
     menus: []
   }
@@ -18,6 +19,7 @@ class Actionsheet extends Component {
     const {
       onRequestClose,
       onCancel,
+      cancelText,
       menus,
       show,
     } = this.props
@@ -42,7 +44,7 @@ class Actionsheet extends Component {
           </div>
           <div className='react-actionsheet-action'>
             <div className='react-actionsheet-action-item' onClick={onCancel}>
-              取消
+              {cancelText}
             </div>
           </div>
         </div>
