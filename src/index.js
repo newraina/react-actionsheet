@@ -1,11 +1,11 @@
 
 import './index.css'
 
-import { Component } from 'react'
+import React from 'react'
 
 function noop() {}
 
-class Actionsheet extends Component {
+class Actionsheet extends React.Component {
 
   static defaultProps = {
     onRequestClose: noop,
