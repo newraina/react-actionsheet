@@ -55,4 +55,4 @@ class Actionsheet extends Component {
 
 // compiled bundle ignores "export default" values and exports empty object!!
 // export default Actionsheet
-module.exports = Actionsheet
+export default Actionsheet
