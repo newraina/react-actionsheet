@@ -6,7 +6,7 @@
   "scripts": {
     "test": "TODO",
     "start": "node server.js",
-    "build": "babel --out-file lib/index.js src/index.js"
+    "build": "NODE_ENV=production babel --out-file lib/index.js src/index.js"
   },
   "repository": {
     "type": "git",
